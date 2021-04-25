@@ -6,6 +6,14 @@
     text-decoration: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap%27');
+@font-face {
+    font-family: sovereing;
+    src: url(imagens/Sovereign.ttf);
+}
+
+
+/* INICIO DA HEADER */
 .section-header{
     width: 100%;
     height: 46vw;
@@ -42,7 +50,10 @@
     top: 77%;
     left: 82%;
 }
+/* FIM DA HEADER */
 
+
+/* INICIO MAIN*/
 .section-main{
     width: 100%;
     height: 79vw;
@@ -52,44 +63,47 @@
     position: relative;
 }
 
-.div-img-grupo-vermelho2{
+/*INICIO GRUPO VERMELHO*/
+.RedGroupBox{
     position: absolute;
     bottom: 66%;
     left: 17%;
     z-index: 11;
 }
 
-.img-grupo-vermelho{
+.RedGroupImage{
     width: 20vw;
 }
 
-.div-img-grupo-vermelho{
+.GroupTitle{
     position: absolute;
     z-index: 12;
     top: 4%;
     left: 21%;
 }
 
-.div-paragraph{
+.RedTitle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.ParagraphColumn{
     position: absolute;
     z-index: 12;
     top: 14%;
     left: 19%;
 }
 
-.h1-grupo-vermelho{
-    font-size: 2.5vw;
-    text-transform: uppercase;
-    color: white;
-}
-
-.paragraph-grupo-vermelho{
+.groupParagraph{
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.8vw;
     text-transform: uppercase;
     color: white;
 }
 
-.div-button-download{
+.redButtonSpace{
     position: absolute;
     z-index: 12;
     top: 23%;
@@ -98,25 +112,27 @@
     height: 3%;
 }
 
-.download{
+.redButton{
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     font-size: 1vw;
     border-radius: 4px;
-    width: 100%;
-    height: 100%;
+    padding: 5% 15%;
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: 1.2s all;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    transition: 1s all;
 }
-.download:hover{
-    transform: scale(1.4);
+.redButton:hover{
+    transform: scale(1.2);
 }
-.download:active{
-    transform: scale(4);
+.redButton:active{
+    transform: scale(1.5);
 }
+/*FIM GRUPO VERMELHO*/
 
-.div-sobreojogo{
+/*INICIO SOBRE O JOGO*/
+.informationBox{
     position: absolute;
     top: 17%;
     left: 55%;
@@ -128,16 +144,7 @@
     flex-direction: row;
 }
 
-.div-img-sobreojogo{
-    display: flex;
-    width: 18vw;
-}
-
-.img-sobre-o-jogo{
-    width: 100%;
-}
-
-.div-sobre{
+.textBox{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -146,23 +153,44 @@
     width: 55%;
 }
 
-.div-sobre h2{
+.textBox h2{
     font-size: 2vw;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.paragraph-sobre{
-    font-size: 1vw;
-}
-
-
-.linha-sobre{
-    width: 8vw;
+.boxLine{
+    width: 10vw;
     margin: 2% 0%;
     height: 0.2vw;
     background-color: #707070; 
 }
+.boxLine:hover{
+    background-color: red;
+}
 
-.linha{
+.paragraph-battleFront{
+    font-size: 1vw;
+}
+
+.boxbattleFront{
+    display: flex;
+    width: 18vw;
+}
+
+.img-battleFront{
+    width: 100%;
+    cursor: pointer;
+}
+.img-battleFront:hover{
+    box-shadow: 10px 10px 70px 10px #2D2D2D;
+}
+.img-battleFront:active{
+    box-shadow: 10px 10px 70px 10px red;
+}
+/*FIM SOBRE O JOGO*/
+
+/*INICIO ESTRUTURA DE JOGO*/
+.line{
     position: absolute;
     top: 41%;
     left: 17%;
@@ -171,16 +199,7 @@
     background-color: #707070;
 }
 
-.second-part-of-the-header{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    flex-direction: column;
-}
-
-.section-estrutura-jogo{
+.structureBox{
     width: 100%;
     height: 500px;
     display: flex;
@@ -190,29 +209,31 @@
     justify-content: center;
 }
 
-.div-img-lord{
+.Box-img-lord{
     position: absolute;
     width: 50%;
     top: 0;
     left: 16%;
+    z-index: 1;
 }
 
 .img-lord{
     width: 100%;
 }
 
-.div-img-rey{
+.box-img-rey{
     position: absolute;
     width: 25%;
     top: 0;
     right: 1%;
+    z-index: 1;
 }
 
 .img-rey{
     width: 100%;
 }
 
-.nav-estrutura-jogo{
+.navigationBox{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -222,12 +243,14 @@
     z-index: 20;
 }
 
-.title-estrutura{
+.navigationTitle{
+    font-family: sovereing;
+    font-weight: 100;
     font-size: 4vw;
     text-transform: uppercase;
 }
 
-.ul-list-estrutura{
+.listBox{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -236,132 +259,355 @@
     height: 20vw;
 }
 
-.list-estrutura{
+.navigationList{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
 }
 
-.link-estrutura{
-    font-size: 1.8vw;
+.listLink{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7vw;
     width: 71%;
     text-transform: uppercase;
     color: #000000;
     text-align: end;
 }
 
-.link-estrutura:hover{
+.listLink:hover{
     color: #ffffff;
     background-color: orangered;
 }
+/*INICIO ESTRUTURA DE JOGO*/
 
-.section-atributos{
+/*INICIO ATRIBUTOS*/
+.darkBox{
     display: flex;
     position: relative;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 123vw;
+    height: 129vw;
     background-color: #2D2D2D;
 }
 
-.div-title-atributos{
+.mainTitleBox{
     width: 72%;
-    margin: 8% 0 2% 0%;
+    margin: 13% 0 2% 0%;
 }
 
-.atributos{
+.mainTitle{
+    font-family: sovereing;
+    font-weight: 100;
     font-size: 2.8vw;;
     color: #ffffff;
     text-transform: uppercase;
 }
 
-.div-img-atributos{
+.imageGroup{
     display: flex;
     flex-direction: row;
     width: 85%;
-}
-
-.div-img-hierarquia{
-    width: 85%;
-    margin: 3%;
-    height: 49vw;
-}
-
-.img-hierarquia{
-    width: 100%;
-}
-
-.div-paragraph-normas{
-    display: flex;
-    width: 49%;
-    text-align: right;
-    margin: 0 0 0 36%;
-}
-
-.div-paragraph-normas > p{
-    color: #ffffff;
-    font-size: 1.3vw;
-}
-
-.div-como-jogar{
-    height: 26vw;
-    width: 18vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-como-jogar > h2{
-    color: #ffffff;
-    font-size: 3vw;
 }
 
 .img-games{
     width: 50%;
 }
 
-.div-conjunto{
+.pictureSet{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
 }
 
-.img-atributos{
+.img-attributes{
     width: 50%;
 }
+/*FIM ATRIBUTOS*/
 
-.div-img-capa-preta{
+/*INICIO HIERARQUIA*/
+.box-img-hierarchy{
+    width: 85%;
+    margin: 3%;
+    height: 49vw;
+}
+
+.img-hierarchy{
+    width: 100%;
+}
+.img-hierarchy:hover{
+    box-shadow: 10px 10px 70px 10px #ffffff;
+}
+
+.box-lastPhrase{
+    display: flex;
+    width: 49%;
+    text-align: right;
+    margin: 0 0 0 36%;
+}
+
+.box-lastPhrase > p{
+    color: #ffffff;
+    font-size: 1.3vw;
+}
+/*FIM HIERARQUIA*/
+
+/*INICIO DESCRIÇÃO COMO JOGAR*/
+.box-howToPlay{
+    height: 48vw;
+    width: 18vw;
+    display: flex;
+    margin-top: 7%;
+    margin-left: 13%;
+    align-items: center;
+}
+
+.box-howToPlay > h2{
+    font-family: sovereing;
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 2.5vw;
+}
+
+.boxblackCape{
     position: absolute;
-    top: 79%;
+    top: 81%;
     right: 67%;
 }
 
-.img-capa-preta{
+.img-blackCape{
     width: 105%;
 }
 
-.div-botoes{
-    height: 16vw;
+.groupButtons{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 9%;
+    height: 16vw;
 }
 
-.div-botoes > div{
+.groupButtons > div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     text-align: center;
     width: 13%;
-    height: 5vw;
+    height: 13vw;
+    margin-bottom: 4%;
     margin-right: 7%;
 }
 
+.numbering{
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+}
 
-/*RESPONSIVO*/
+.download, .toChoose, .toExplore{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.4vw;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 5;
+    padding: 0.9vw 2.8vw;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.download::before, .toChoose::before, .toExplore::before{
+    transition: 0.5s;
+    top: 0;
+    left: 14vw;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #D74430;
+    z-index: -1;
+}
+
+.download:hover::before, .toChoose:hover::before, .toExplore:hover::before{
+    left: 0;
+}
+
+.box-paragraphDownload{
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphDownload{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    width: 66%;
+}
+
+.buttonLine{
+    position: relative;
+    left: 29%;
+    width: 39%;
+    height: 0.2vw;
+    background-color: #000000;
+}
+
+.selectionBox{
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.selectionParagraph{
+    height: 3vw;
+    font-size: 1.1vw;
+    width: 41%;
+}
+
+.selectionLine{
+    position: relative;
+    left: 33%;
+    width: 39%;
+    height: 0.2vw;
+    background-color: #000000; 
+}
+
+.boxConquest{
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphConquest{
+    font-size: 1.2vw;
+    width: 42%;
+    height: 3vw;
+}
+
+.ConquestLine{
+    position: relative;
+    left: 33%;
+    width: 36%;
+    height: 0.2vw;
+    background-color: #000000; 
+}
+/*FIM DESCRIÇÃO COMO JOGAR*/
+
+
+/*INICIO SOBRE APLICATIVO*/
+footer{
+    width: 100%;
+    height: 42vw;
+}
+
+.informationColumn{
+    background-color: #FF5A56;
+    width: 68%;
+    margin-top: 5%;
+    height: 42vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.applicationTitleBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8%;
+}
+
+.applicationTitleBox > h2{
+    color: #ffffff;
+    font-family: sovereing;
+    font-size: 3vw;
+    font-weight: 100;
+    margin-left: 22%;
+    margin-bottom: 3%;
+}
+
+.applicationTitleBox > p{
+    height: 5vw;
+    width: 36%;
+    font-size: 0.9vw;
+    margin-left: 22%;
+    margin-top: 2%;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.applicationButtons{
+    margin-left: 22%;
+}
+
+.applicationButtons > img{
+    cursor: pointer;
+    width: 20%;
+}
+
+.applicationLine{
+    position: relative;
+    top: 84%;
+    left: 0%;
+    width: 41%;
+    height: 0.3vw;
+    background-color: #D74430;
+}
+
+.box-img-name{
+    padding-top: 10%;
+    margin-left: 22%;
+}
+
+.box-img-name > img{
+    width: 25%;
+}
+
+.applicationParagraph{
+    height: 6vw;
+}
+
+.applicationParagraph > p{
+    height: 5vw;
+    width: 50%;
+    font-size: 1.2vw;
+    margin-left: 22%;
+    margin-top: 2%;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box-img-darth{
+    position: absolute;
+    width: 39%;
+    left: 58%;
+    margin-bottom: 8%;
+}
+
+.img-darth{
+    width: 93%;
+}
+
+.layout{
+    font-size: 0.6vw;
+    width: 45%;
+    bottom: 2%;
+    margin-left: 35%;
+    position: absolute;
+}
+/*FIM SOBRE APLICATIVO*/
+
+/*RESPONSIVO PARA MOBILE*/
 @media screen and (max-width: 425px) {
 
-    .div-img-grupo-vermelho2{
+    .section-main{
+        height: 122vw;
+    }
+
+    .RedGroupBox{
         position: absolute;
         width: 53vw;
         bottom: 29%;
@@ -369,115 +615,335 @@
         z-index: 11;
     }
 
-    .img-grupo-vermelho{
+    .RedGroupImage{
         width: 100%;
     }
 
-    .div-img-grupo-vermelho{
+    .GroupTitle{
         top: 18%;
         left: 54%;
     }
 
-    .h1-grupo-vermelho{
+    .RedTitle{
         font-size: 5.5vw;
     }
 
-    .div-paragraph{
+    .ParagraphColumn{
         top: 39%;
         left: 41%;
     }
 
-    .paragraph-grupo-vermelho{
+    .groupParagraph{
         font-size: 2.4vw;
     }
 
-    .download{
-        font-size: 2.8vw;
-        border-radius: 4px;
-        width: 100%;
-        height: 100%;
-    }
-
-    .div-button-download{
+    .redButtonSpace{
         top: 54%;
         left: 49%;
         width: 34%;
         height: 7%;
     }
 
-    .img-sobre-o-jogo{
-        width: 289%;
-    }
-
-    .linha{
-        top: 124%;
-        left: 16%;
-        width: 75%;
-        height: 1vw;
-        background-color: #707070;
-    }
-
-    .section-estrutura-jogo{
+    .redButton{
+        font-size: 2.8vw;
+        border-radius: 4px;
         width: 100%;
-        height: 54vw;
-        top: 205vw;
+        height: 100%;
     }
 
-    .div-img-lord{
-        width: 50%;
-        top: 0;
-        left: 3%;
-    }
-
-    .nav-estrutura-jogo{
-        margin-bottom: 4vw;
-        margin-right: 8vw;
-    }
-
-    .title-estrutura{
-        font-size: 4vw;
-    }
-
-    .section-main{
-        height: 122vw;
-    }
-
-    .link-estrutura{
-        font-size: 2.1vw;
-        width: 88%;
-    }
-
-    .div-sobreojogo{
+    .informationBox{
         top: 74%;
         left: 39%;
         width: 52%;
         height: 51%;
     }
 
-    .div-sobre{
+    .textBox{
         margin: 1%;
         width: 99%;
         height: 38%;
     }
-    
-    .linha-sobre{
-        width: 14vw;
-        height: 0.3vw;
-        background-color: #000000; 
+
+    .textBox h2{
+        font-size: 4vw;
     }
 
-    .div-img-sobreojogo{
+    .boxLine{
+        top: 124%;
+        left: 16%;
+        width: 75%;
+        height: 0.7vw;
+        background-color: #000000;
+    }
+
+    .paragraph-battleFront{
+        font-size: 2.6vw;
+        width: 146%;
+    }
+
+    .boxbattleFront{
         position: absolute;
         top: 11%;
         left: 0;
     }
 
-    .paragraph-sobre{
-        font-size: 2.6vw;
-        width: 146%;
+    .img-battleFront{
+        width: 289%;
     }
 
-    .div-sobre h2{
+    .structureBox{
+        width: 100%;
+        height: 54vw;
+        top: 205vw;
+    }
+
+    .Box-img-lord{
+        width: 50%;
+        top: 0;
+        left: 3%;
+    }
+
+    .navigationBox{
+        margin-bottom: 4vw;
+        margin-right: 8vw;
+    }
+
+    .navigationTitle{
         font-size: 4vw;
     }
+
+    .listLink{
+        font-size: 2.1vw;
+        width: 88%;
+    }
+    
+    .darkBox{
+        margin-top: 79%;
+        height: 368vw;
+    }
+
+    .line{
+        top: 127%;
+        height: 1vw;
+        width: 74%;
+        left: 16%;
+    }
+
+    .listBox{
+        height: 31vw;
+    }
+
+    .mainTitleBox{
+        margin-left: 6%;
+        width: 15%;
+    }
+
+    .imageGroup{
+        flex-direction: column;
+    }
+
+    .img-games{
+        width: 100%;
+    }
+
+    .pictureSet{
+        flex-direction: column;
+    }
+
+    .img-attributes{
+        width: 199%;
+    }
+
+    .box-img-hierarchy{
+        width: 100%;
+    }
+
+    .box-lastPhrase{
+        margin: 9% 0 0 20%;
+        height: 10vw;
+    }
+
+    .box-lastPhrase > p{
+        font-size: 1.8vw;
+    }
+
+    .boxblackCape{
+        width: 73%;
+        top: 93%;
+        right: 69%;
+    }
+
+    .box-howToPlay{
+        width: 36%;
+        margin-left: 37%;
+        margin-top: auto;
+    }
+
+    .box-howToPlay > h2{
+        width: 109%;
+        font-size: 4.8vw;
+    }
+
+    .img-blackCape{
+        width: 104vw;
+    }
+
+    .groupButtons{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 123vw;
+    }
+
+    .groupButtons > div{
+        width: 35%;
+        margin-left: 51%;
+        margin-bottom: 21%;
+    }
+
+    .numbering{
+        font-size: 7.5vw;
+    }
+
+    .download, .toChoose, .toExplore{
+        font-size: 4vw;
+        padding: 2.8vw 5.8vw;
+    }
+
+    .box-paragraphDownload{
+        width: 144%;
+        height: 5vw;
+        margin-top: 5%;
+        margin-left: -22%;
+    }
+
+    .paragraphDownload {
+        font-size: 3.7vw;
+    }
+
+    .selectionBox{
+        width: 135%;
+        margin-left: -17%;
+        margin-top: 6%;
+    }
+
+    .selectionParagraph{
+        font-size: 4vw;
+    }
+
+    .download::before, .toChoose::before, .toExplore::before{
+        left: 36vw;
+    }
+
+    .boxConquest{
+        height: 5vw;
+        width: 99%;
+    }
+
+    .paragraphConquest{
+        font-size: 4vw;
+    }
+
+    .buttonLine {
+        position: absolute;
+        left: 64%;
+        margin-top: 34%;
+        width: 16%;
+        height: 1.2vw;
+        background-color: #000000;
+    }
+
+    .selectionLine {
+        position: absolute;
+        left: 64%;
+        margin-top: 40%;
+        width: 16%;
+        height: 1.2vw;
+        background-color: #000000;
+    }
+
+    .ConquestLine{
+        position: absolute;
+        left: 64%;
+        margin-top: 37%;
+        width: 16%;
+        height: 1.2vw;
+        background-color: #000000;
+    }
+
+    .informationColumn{
+        margin-top: 3%;
+        width: 100%;
+        height: 147vw;
+        justify-content: flex-start;
+    }
+
+    .applicationTitleBox{
+        margin-right: 23%;
+    }
+
+    .applicationTitleBox > h2 {
+        font-size: 12vw;
+    }
+
+    .box-img-darth{
+        margin-top: 103%;
+        left: 6%;
+    }
+
+    .img-darth {
+        width: 202%;
+    }
+
+    .applicationTitleBox > p{
+        width: 87%;
+        font-size: 3vw;
+    }
+
+    .applicationButtons{
+        margin-left: 13%;
+        margin-top: 12%;
+    }
+
+    .applicationButtons > img{
+        width: 41%;
+    }
+
+    .applicationLine{
+        top: 22%;
+        height: 1.4vw;
+        width: 83%;
+    }
+
+    .box-img-name{
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+        padding-top: 8%;
+    }
+
+    .box-img-name > img {
+        width: 36%;
+    }
+
+    .applicationParagraph {
+        height: 24vw;
+        margin-top: 3%;
+        margin-left: -29%;
+        width: 129%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .applicationParagraph > p{
+        font-size: 3vw;
+    }
+
+    .layout{
+        top: 103%;
+        width: 234%;
+        margin-left: 3%;
+        height: 10%;
+        font-size: 3vw;
+    }
+
 }

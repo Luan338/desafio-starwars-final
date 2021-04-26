@@ -238,8 +238,8 @@
     flex-direction: column;
     align-items: flex-end;
     width: 51%;
-    height: 80%;
-    margin-top: 1vw;
+    height: 97%;
+    margin-top: 8vw;
     z-index: 20;
 }
 
@@ -258,10 +258,11 @@
 .listBox{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
     width: 45vw;
     height: 20vw;
+    margin-top: 3vw;
 }
 
 .navigationList{
@@ -284,7 +285,7 @@
     color: #ffffff;
     background-color: orangered;
 }
-/*INICIO ESTRUTURA DE JOGO*/
+/*FIM ESTRUTURA DE JOGO*/
 
 /*INICIO ATRIBUTOS*/
 .darkBox{
@@ -313,11 +314,67 @@
 .imageGroup{
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 86%;
+}
+
+.boxGames{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 26vw;
+    position: relative;
+    overflow: hidden;
+}
+.boxGames:hover .floatingBox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    bottom: 0;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.floatingBox{
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #D74430;
+    position: absolute;
+}
+
+.floatingBox > h2{
+    font-family: sovereing;
+    width: 20%;
+    margin-left: 5%;
+    font-size: 2.5vw;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.floatingBox > p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    width: 81%;
+    margin: 0% 0% 11% 5%;
+    height: 3vw;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.buttonFloating{
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    font-size: 1.5vw;
+    border-radius: 1px;
+    padding: 2% 8%;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    color: #ffffff;
 }
 
 .img-games{
-    width: 50%;
+    width: 101%;
 }
 
 .pictureSet{
@@ -735,7 +792,7 @@ footer{
     }
 
     .listBox{
-        height: 29vw;
+        height: 25vw;
     }
 
     .mainTitleBox{
@@ -951,4 +1008,16 @@ footer{
         font-size: 3vw;
     }
 
+    .boxGames{
+        width: 99%;
+        height: 52vw;
+    }
+
+    .floatingBox > h2{
+        font-size: 8.5vw;
+    }
+
+    .floatingBox > p{
+        font-size: 2.9vw;
+    }
 }

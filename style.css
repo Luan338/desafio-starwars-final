@@ -244,10 +244,15 @@
 }
 
 .navigationTitle{
-    font-family: sovereing;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
-    font-size: 4vw;
+    font-size: 3vw;
     text-transform: uppercase;
+}
+
+.negrito{
+    font-family: sovereing;
+    font-weight: bold;
 }
 
 .listBox{
@@ -730,7 +735,7 @@ footer{
     }
 
     .listBox{
-        height: 31vw;
+        height: 29vw;
     }
 
     .mainTitleBox{

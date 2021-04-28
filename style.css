@@ -529,6 +529,18 @@
     margin-right: 7%;
 }
 
+.groupButtons > div:hover .buttonLine{
+    background-color: #D74430;
+}
+
+.groupButtons > div:hover .selectionLine{
+    background-color: #D74430;
+}
+
+.groupButtons > div:hover .ConquestLine{
+    background-color: #D74430;
+}
+
 .numbering{
     font-size: 2.5vw;
     font-family: 'Open Sans', sans-serif;

@@ -438,6 +438,43 @@
     position: absolute;
 }
 
+.vertical-top{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 0.8%;
+    height: 19%;
+    background-color: #ffffff;
+}
+
+.horizontal-top{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 14%;
+    height: 1.2%;
+    background-color: #ffffff;
+}
+
+.vertical-bottom{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 0.8%;
+    height: 18%;
+    background-color: #ffffff;
+}
+
+.horizontal-bottom{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    width: 12%;
+    height: 0.8%;
+    background-color: #ffffff;
+}
+
+
 .buttonFloating-attributes{
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
